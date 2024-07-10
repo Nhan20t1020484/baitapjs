@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <input type="number" placeholder="nhap gia tri" id="data1">
+    <p></p>
+    <input type="number" placeholder="nhap gia tri" id="data2">
+    <p></p>
+    <button onclick="dulieu()">IN RA</button>
+    <h3 id="text1"></h3>
+    <h3 id="text2"></h3>
+    <button onclick="tong ()"> Tổng</button>
+
+    <script>
+        function dulieu() {
+            let dulieu1 = document.getElementById("data1").value;
+            document.getElementById("text1").innerHTML = dulieu1;
+            console.log(dulieu);
+
+            let dulieu2 = document.getElementById("data2").value;
+            document.getElementById("text2").innerHTML = dulieu2;
+            console.log(dulieu);
+        }
+
+
+    </script>
+    <script>
+        function tong() {
+
+            let a = document.getElementById("so1").value;
+            let b = document.getElementById("so2").value;
+            let c = Number(a) + Number(b);
+            document.getElementById("dat1").value = c
+            document.getElementById("data2").innerHTML = c
+
+        }
+    </script>
+
+</body>
+
+</html>

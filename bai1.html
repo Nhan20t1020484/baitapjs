@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 JS</title>
+</head>
+<body>
+    <input type="text" placeholder="nhap gia tri" id="data">
+    <button onclick="dulieu()">Click!</button>
+    <h3 id="text"></h3>
+    <script>
+         function dulieu(){       
+            let dulieu = document.getElementById("data").value;
+            document.getElementById("text").innerHTML = dulieu;
+            console.log(dulieu);
+        }
+    </script>
+    
+</body>
+</html>
